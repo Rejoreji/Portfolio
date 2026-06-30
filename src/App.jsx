@@ -23,10 +23,11 @@ const App = () => {
         </section>
         <section className=" sticky top-0 h-screen z-40 bg-gray-900 ">
            <Contact/>
+           <Footer/>
         </section>
-        <section className=" sticky top-0  z-50 bg-white ">
-          <Footer/>
-        </section>
+        
+          
+       
     </div>
   )
 }
