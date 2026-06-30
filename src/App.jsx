@@ -1,0 +1,34 @@
+import React from 'react'
+import Hero from './components/Hero'
+import Navbar from './components/Navbar'
+import Project from './components/Project'
+import About from './components/About'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+
+const App = () => {
+  return (
+    <div>
+
+        <Navbar/>
+        <section data-theme="light" className='sticky top-0 h-screen z-10'>
+          <Hero/>
+        </section>
+        <section data-theme="dark" className="sticky top-0 h-screen z-20 ">
+          <Project/>
+          
+        </section>
+        <section data-theme="light" className="sticky top-0 h-screen z-30 bg-white ">
+          <About/>
+        </section>
+        <section className=" sticky top-0 h-screen z-40 bg-gray-900 ">
+           <Contact/>
+        </section>
+        <section className=" sticky top-0  z-50 bg-white ">
+          <Footer/>
+        </section>
+    </div>
+  )
+}
+
+export default App
