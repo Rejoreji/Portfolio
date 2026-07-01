@@ -16,15 +16,15 @@ const App = () => {
           <Hero/>
         </section>
 
-        <div className=''>
+         <div className=''>
           <div data-theme="dark" className="sticky h-screen z-20 ">
             <Project/>
-          </div>
+          </div> 
 
-        {/* Spacer */}
-        <div data-theme="dark"  className="h-[180vh]" />
+          {/* Spacer */}
+          <div data-theme="dark"  className=" h-[190vh]" />
         </div>
-        
+         
         <section data-theme="light" className="sticky top-0 h-screen z-30 bg-white ">
           <About/>
         </section>
