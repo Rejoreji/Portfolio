@@ -6,30 +6,33 @@ import { IoMail } from "react-icons/io5";
 const Navbar = () => {
     const [isDark, setIsDark] = useState(false)
 
-  useEffect(() => {
+    useEffect(() => {
     const handleScroll = () => {
-      // get all sections with data-theme attribute
-      const sections = document.querySelectorAll("[data-theme]")
-      const scrollPos = window.scrollY + 100 // offset for navbar height
+    const sections = document.querySelectorAll("[data-theme]")
+    const scrollPos = window.scrollY  // navbar height offset
 
-      sections.forEach((section) => {
-        const top = section.offsetTop
-        const bottom = top + section.offsetHeight
+    sections.forEach((section) => {
+      const top = section.offsetTop
+      const bottom = top + section.offsetHeight
 
-        if (scrollPos >= top && scrollPos < bottom) {
-          const theme = section.getAttribute("data-theme")
-          setIsDark(theme === "dark")
-        }
-      })
-    }
+      if (scrollPos >= top && scrollPos < bottom) {
+        const theme = section.getAttribute("data-theme")
+        setIsDark(theme === "dark")
+      }
+    })
+  }
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+  // run once on mount to set initial state
+  handleScroll()
 
+  window.addEventListener("scroll", handleScroll, { passive: true })
+  return () => window.removeEventListener("scroll", handleScroll)
+}, [])
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-100 transition-colors duration-500 `}>
+    <nav className={`fixed top-0 left-0 right-0 z-90 transition-colors duration-500 ${
+      isDark ? "bg-black/20  backdrop-blur-md" : "bg-white/10 backdrop-blur-sm"
+    }`}>
         <div className="flex items-center justify-between py-5 px-10 ">
             <div className="w-1/4 invisible md:block"></div>
             <div className={`flex gap-5 justify-center w-full md:w-auto transition-colors duration-200 ${isDark ? "text-white" : "text-black"} `}>
@@ -44,7 +47,6 @@ const Navbar = () => {
                 <a href="https://www.linkedin.com/in/rejo-raji/"><FaLinkedin className='size-5'/></a>
                 <a href="mailto:rejoreji98@gmail.com"><IoMail className='size-6' /></a>
             </div>
-            
         </div>
     </nav>
   )

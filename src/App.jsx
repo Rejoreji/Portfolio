@@ -11,17 +11,25 @@ const App = () => {
     <div>
 
         <Navbar/>
+
         <section data-theme="light" className='sticky top-0 h-screen z-10'>
           <Hero/>
         </section>
-        <section data-theme="dark" className="sticky top-0 h-screen z-20 ">
-          <Project/>
-          
-        </section>
+
+        <div className=''>
+          <div data-theme="dark" className="sticky h-screen z-20 ">
+            <Project/>
+          </div>
+
+        {/* Spacer */}
+        <div data-theme="dark"  className="h-[180vh]" />
+        </div>
+        
         <section data-theme="light" className="sticky top-0 h-screen z-30 bg-white ">
           <About/>
         </section>
-        <section className=" sticky top-0 h-screen z-40 bg-gray-900 ">
+
+        <section className=" sticky top-0 h-screen z-40 ">
            <Contact/>
            <Footer/>
         </section>
