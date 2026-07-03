@@ -13,7 +13,7 @@ const projects = [
     description: "AI-powered resume analyzer using Google Gemini 2.5 Flash. Analyzes resumes and provides detailed feedback with scores, strengths and suggestions.",
     tags: ["React", "Node.js", "Gemini AI", "Express"],
     live: "https://resume-iq-rouge.vercel.app/",
-    github: "https://github.com/Rejoreji",
+    github: "https://github.com/Rejoreji/ResumeIQ",
     align: "left",   // image left, details right
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     description: "Full stack e-commerce platform for sneakers built with MERN stack. Features JWT auth, product management and order tracking.",
     tags: ["MongoDB", "Express", "React", "Node.js"],
     live: "https://kickslab-seven.vercel.app/",
-    github: "https://github.com/Rejoreji",
+    github: "https://github.com/Rejoreji/kickslab",
     align: "right",  // image right, details left
   },
   {
@@ -142,7 +142,7 @@ const projects = [
            <a href={project.live}
             target="_blank"
             rel="noreferrer"
-            className="bg-white hover:bg-amber-300 text-black font-light px-6 py-2.5 rounded-full text-sm transition-all duration-200 hover:scale-105"
+            className="bg-white hover:bg-[#F9452E] hover:text-white text-black font-light px-6 py-2.5 rounded-full text-sm transition-all duration-200 hover:scale-105"
           >
             Live Demo →
           </a>
@@ -150,7 +150,7 @@ const projects = [
            <a href={project.github}
             target="_blank"
             rel="noreferrer"
-            className="border border-gray-600 hover:border-amber-400 hover:text-amber-400 text-white font-bold px-6 py-2.5 rounded-full text-sm transition-all duration-200"
+            className="border border-gray-600 hover:border-[#F9452E] text-white font-bold px-6 py-2.5 rounded-full text-sm transition-all duration-200"
           >
             GitHub
           </a>

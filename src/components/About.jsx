@@ -17,11 +17,9 @@ const About = () => {
       </div>
       <div className="flex justify-center">
 
-        <button type="submit"
-                className="bg-black hover:bg-white hover:text-black text-white font-light px-8 py-3  transition-all duration-200 cursor-pointer mt-5"
-                >
-                    download resume
-                    
+        <button className="px-6 py-2.5 font-normal text-xl border  text-black cursor-pointer hover:bg-[#F9452E] hover:text-white transition-all duration-400 ">
+  
+         Download Resume
         </button>
       </div>
 

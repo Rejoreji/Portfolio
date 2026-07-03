@@ -37,15 +37,15 @@ const Navbar = () => {
             <div className="w-1/4 invisible md:block"></div>
             <div className={`flex gap-5 justify-center w-full md:w-auto transition-colors duration-200 ${isDark ? "text-white" : "text-black"} `}>
                 
-                <a href="#project" className='hover:text-gray-500'>project</a>
-                <a href="#about" className='hover:text-gray-500'>about</a>
-                <a href="#contact" className='hover:text-gray-500'>contact</a>
+                <a href="#project" className='hover:text-[#F9452E]'>project</a>
+                <a href="#about" className='hover:text-[#F9452E]'>about</a>
+                <a href="#contact" className='hover:text-[#F9452E]'>contact</a>
             </div>
             <div className={`flex items-center justify-end w-1/4 gap-5 transition-colors duration-200 ${isDark ? "text-white" : "text-black"} `}>
                 
-                <a href="https://github.com/Rejoreji"><FaGithub className='size-5' /></a>
-                <a href="https://www.linkedin.com/in/rejo-raji/"><FaLinkedin className='size-5'/></a>
-                <a href="mailto:rejoreji98@gmail.com"><IoMail className='size-6' /></a>
+                <a href="https://github.com/Rejoreji"><FaGithub className='size-5 hover:text-[#F9452E]' /></a>
+                <a href="https://www.linkedin.com/in/rejo-raji/"><FaLinkedin className='size-5 hover:text-[#F9452E]'/></a>
+                <a href="mailto:rejoreji98@gmail.com"><IoMail className='size-6 hover:text-[#F9452E]' /></a>
             </div>
         </div>
     </nav>
