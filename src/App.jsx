@@ -33,9 +33,7 @@ const App = () => {
            <Contact/>
            <Footer/>
         </section>
-        
-          
-       
+         
     </div>
   )
 }

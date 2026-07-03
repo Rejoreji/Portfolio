@@ -164,7 +164,7 @@ const projects = [
 
 const Project = () => {
   return (
-    <div className="w-full py-32  bg-black text-white">
+    <div className="w-full py-32  bg-black text-white" id="project">
 
       {/* Title */}
       <motion.p
