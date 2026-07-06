@@ -16,7 +16,7 @@ const App = () => {
           <Hero/>
         </section>
 
-         <div className=''>
+         <div>
           <div data-theme="dark" className="sticky h-screen z-20 ">
             <Project/>
           </div> 

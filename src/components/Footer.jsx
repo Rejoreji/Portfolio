@@ -2,9 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='min-h-80 flex px-10 pt-15 bg-black'>
-        <div className="flex flex-col ">
-            <p className='font-semibold text-4xl text-white'>Lets Work Together</p>
+    <footer className='flex px-6 md:px-10 pt-10 md:pt-15 pb-6 bg-black min-h-60 md:min-h-80'>
+        <div className="flex flex-col w-full ">
+            <p className='font-semibold text-4xl text-white md:text-4xl'>Lets Work Together</p>
             <div className="">
                 {/* <button
                   type="submit"
@@ -13,7 +13,7 @@ const Footer = () => {
                     contact now 
                 </button> */}
               </div>
-              <p className='text-white text-[340px]'>REJO RAJI</p>
+              <p className='text-white font-medium  text-[80px] md:text-[180px] lg:text-[340px] leading-none overflow-hidden'>REJO RAJI</p>
 
         </div>
         

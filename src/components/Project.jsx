@@ -64,7 +64,7 @@ const projects = [
 
       {/* ── Image Side ── */}
       <div
-        className="relative w-2/3 h-180 rounded-2xl overflow-hidden cursor-none shrink-0"
+        className="relative w-2/3 h-180 rounded-2xl overflow-hidden cursor-none shrink-0 "
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         onMouseMove={handleMouseMove}
@@ -80,7 +80,7 @@ const projects = [
         />
 
         {/* Dark overlay on hover */}
-        <div className={`absolute inset-0 bg-black/30 transition-opacity duration-500 ${
+        <div className={`absolute inset-0  backdrop-blur-[5px] transition-opacity duration-500 ${
           hovered ? "opacity-100" : "opacity-0"
         }`} />
 

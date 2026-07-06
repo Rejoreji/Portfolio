@@ -4,7 +4,7 @@ import { FiGlobe } from 'react-icons/fi'
 
 const Hero = () => {
   return (
-    <section className='min-h-screen flex items-center px-10 justify-between'>
+    <section className='min-h-screen flex items-center px-10 justify-between' id='hero'>
         <div className='flex flex-col text-[85px]'>
             <p>
                 Hello world 

@@ -1,4 +1,4 @@
-import {React,useState } from 'react'
+import {useState } from 'react'
 import { MdOutlineMailOutline } from "react-icons/md"
 import { LuPhone } from "react-icons/lu"
 import { GoLocation } from "react-icons/go"
@@ -101,7 +101,7 @@ const Contact = () => {
                 <input
                   type="email"
                   name="email"
-                  placeholder="Dummy@mail.com"
+                  placeholder="yourmail@whichevermail.com"
                   value={formData.email}
                   onChange={handleChange}
                   required
