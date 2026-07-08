@@ -13,7 +13,7 @@ const Footer = () => {
                     contact now 
                 </button> */}
               </div>
-              <p className='text-white font-medium  text-7xl md:text-[180px] lg:text-[340px] leading-none overflow-hidden'>REJO RAJI</p>
+              <p className='text-white font-medium  mt-0 leading-none' style={{ fontSize: "clamp(2rem, 18vw, 20rem)" }}>REJO RAJI</p>
 
         </div>
         

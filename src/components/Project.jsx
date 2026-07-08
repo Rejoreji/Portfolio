@@ -165,7 +165,7 @@ const projects = [
 
 const Project = () => {
   return (
-    <div className="w-full py-32  bg-black text-white" id="project">
+    <div className="w-full md:py-30 py-10  bg-black text-white" id="project">
 
       {/* Title */}
       <motion.p
@@ -173,7 +173,7 @@ const Project = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
-        className="font-thin text-8xl md:text-9xl px-10 mb-20"
+        className="font-thin text-[80px] md:text-9xl px-10 mb-20 md:flex text-center"
       >
         Projects
       </motion.p>
