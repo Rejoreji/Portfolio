@@ -4,8 +4,8 @@ import { FiGlobe } from 'react-icons/fi'
 
 const Hero = () => {
   return (
-    <section className='min-h-screen flex flex-col md:flex-row items-center md:px-10 px-6 justify-between pt-24 gap-10' id='hero'>
-        <div className='flex flex-col md:text-[85px] text-3xl'>
+    <section className='min-h-screen flex flex-col md:flex-row items-center md:px-10 px-6 md:justify-between pt-24 md:gap-10 gap-20 ' id='hero'>
+        <div className='flex flex-col md:text-[80px] text-3xl'>
             <p>
                 Hello world 
             </p>
