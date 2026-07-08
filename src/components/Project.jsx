@@ -179,7 +179,7 @@ const Project = () => {
       </motion.p>
 
       {/* Cards */}
-      <div className="flex flex-col px-10 gap-24">
+      <div className="flex flex-col px-10 gap-24 overflow-hidden">
         {projects.map((project, index) => (
           <ProjectCard
             key={project.id}
