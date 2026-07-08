@@ -3,10 +3,10 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='py-30' id='about'>
-      <p className='font-thin text-9xl flex px-10'>About me</p>
+    <div className='py-30 md:py-30' id='about'>
+      <p className='font-thin md:text-9xl text-8xl  flex px-10 md:px-10'>About me</p>
 
-      <div className="flex flex-col px-100  py-15 items-center text-3xl font-thin">
+      <div className="flex flex-col px-6 md:px-100  py-15 items-center text-2xl md:text-3xl font-thin">
          <p>Hey! I'm a <span className='font-medium'>Full Stack Developer </span> based in Bangalore, India, 
             passionate about building real-world applications that 
             solve real problems.</p>

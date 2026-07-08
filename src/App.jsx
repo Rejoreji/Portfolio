@@ -22,7 +22,7 @@ const App = () => {
           </div> 
 
           {/* Spacer */}
-          <div data-theme="dark"  className=" h-[190vh]" />
+          <div data-theme="dark"  className=" md:h-[190vh] h-[140vh]" />
         </div>
          
         <section data-theme="light" className="sticky top-0 h-screen z-30 bg-white ">

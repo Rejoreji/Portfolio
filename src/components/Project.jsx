@@ -57,14 +57,15 @@ const projects = [
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className={`flex items-center gap-10 ${
-        isRight ? "flex-row-reverse" : "flex-row"
+      className={`flex flex-col md:flex-row items-center gap-8 md:gap-10 ${
+        isRight ? "md:flex-row-reverse" : "md:flex-row"
       }`}
+
     >
 
       {/* ── Image Side ── */}
       <div
-        className="relative w-2/3 h-180 rounded-2xl overflow-hidden cursor-none shrink-0 "
+        className="relative w-full md:w-2/3 md:h-180 h-64 rounded-2xl overflow-hidden cursor-none shrink-0 "
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         onMouseMove={handleMouseMove}
@@ -80,7 +81,7 @@ const projects = [
         />
 
         {/* Dark overlay on hover */}
-        <div className={`absolute inset-0  backdrop-blur-[5px] transition-opacity duration-500 ${
+        <div className={`absolute inset-0 transition-opacity duration-500 ${
           hovered ? "opacity-100" : "opacity-0"
         }`} />
 
@@ -103,7 +104,7 @@ const projects = [
       </div>
 
       {/* ── Details Side ── */}
-      <div className={`w-1/2 flex flex-col gap-5 ${
+      <div className={`md:w-1/2 w-fit flex flex-col gap-5 ${
         isRight ? "items-end text-right" : "items-start text-left"
       }`}>
 
@@ -142,7 +143,7 @@ const projects = [
            <a href={project.live}
             target="_blank"
             rel="noreferrer"
-            className="bg-white hover:bg-[#F9452E] hover:text-white text-black font-light px-6 py-2.5 rounded-full text-sm transition-all duration-200 hover:scale-105"
+            className="bg-white hover:bg-[#F9452E] hover:text-white text-black font-light  px-2 md:px-6 py-2.5 rounded-full text-[14px] transition-all duration-200 hover:scale-105"
           >
             Live Demo →
           </a>
@@ -172,7 +173,7 @@ const Project = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
-        className="font-thin text-9xl px-10 mb-20"
+        className="font-thin text-8xl md:text-9xl px-10 mb-20"
       >
         Projects
       </motion.p>

@@ -47,7 +47,7 @@ const Contact = () => {
 
   return (
     <section className="min-h-screen bg-white py-30" id="contact">
-        <p className='font-thin text-9xl px-10 flex'>Contact</p>
+        <p className='font-thin md:text-9xl text-8xl px-10 flex'>Contact</p>
         <div className="max-w-6xl mx-auto py-15">
 
 
@@ -70,7 +70,7 @@ const Contact = () => {
                   <input
                     type="text"
                     name="firstName"
-                    placeholder="Rejo"
+                    placeholder="First Name"
                     value={formData.firstName}
                     onChange={handleChange}
                     required
@@ -84,7 +84,7 @@ const Contact = () => {
                   <input
                     type="text"
                     name="lastName"
-                    placeholder="Raji"
+                    placeholder="Last Name"
                     value={formData.lastName}
                     onChange={handleChange}
                     required
@@ -144,7 +144,7 @@ const Contact = () => {
                   type="submit"
                   className="bg-black hover:bg-[#F9452E] hover:text-white text-white font-light px-10 py-3 transition-all duration-400 cursor-pointer"
                 >
-                  {sent ? "Message Sent! ✅" : "Submit Now"}
+                  {sent ? "Message Sent!" : "Submit Now"}
                 </button>
               </div>
 
