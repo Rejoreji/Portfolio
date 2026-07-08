@@ -17,12 +17,12 @@ const App = () => {
         </section>
 
          <div>
-          <div data-theme="dark" className="sticky h-screen z-20 ">
+          <div data-theme="dark" className=" h-screen z-20 sticky ">
             <Project/>
           </div> 
 
           {/* Spacer */}
-          <div data-theme="dark"  className=" md:h-[190vh] h-[140vh]" />
+          <div data-theme="dark"  className=" md:h-[190vh] h-375 bg-black z-10 sticky" />
         </div>
          
         <section data-theme="light" className="sticky top-0 h-screen z-30 bg-white ">

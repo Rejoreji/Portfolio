@@ -13,8 +13,8 @@ const Hero = () => {
                 I'm Rejo, a Full Stack Developer
             </p>
         </div>
-        <div className="flex flex-col items-center gap-10">
-            <div className="w-100 h-120 overflow-hidden rounded-[40px] md:rounded-[50px]">
+        <div className="flex flex-col items-center md:gap-10 pb-10 gap-2">
+            <div className="w-80 h-100 md:w-100 md:h-120 overflow-hidden rounded-[40px] md:rounded-[50px]">
                 <img src={profile} alt="" srcset="" className="w-200 h-150 object-cover " />
             </div>
             
